@@ -1,0 +1,53 @@
+<head>
+<title>Almacenamiento Local</title>
+
+<script src="../js/funciones.js"></script>
+
+</head>
+
+<body>
+<h2>Ejemplo de Local Storage</h2>
+
+<input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+<button onclick="guardarnombre()">Guardar</button>
+<button onclick="mostrarnombre()">Mostrar</button>
+<button onclick="eliminarnombre()">Eliminar</button>
+
+<p id="resultado"></p>
+<br>
+<ul id="lista"></ul>
+
+<script>
+
+fetch('../js/datos.json')
+
+.then(response => response.json())
+.then(data => {
+
+let html = data.map(item => `<li>${nombre} (${edad} años)</li>`).join("")
+document.getElementById("lista").innerHTML = html;
+
+
+})
+
+
+
+
+
+
+
+
+</script>
+<script>
+fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQAp-TUjcZWPtms3EODob5v6Av2Omt1pTJkwjCT3dlsWp3Z8raCiGYoychgHHwFgDjabeN_WayPL18c/pub?output=csv")
+
+
+
+
+</script>
+
+
+
+
+</body>
