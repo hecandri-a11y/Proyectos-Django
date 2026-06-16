@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,33 +20,33 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Juan Martínez</h1>
+        <h1>Marcus Anton</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 17 años</p>
-        <p><strong>Talento:</strong> Básquetbol</p>
+        <p><strong>Edad:</strong> 22 años</p>
+        <p><strong>Talento:</strong> Pintura</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            Mientras que a su mellizo Juan Pérez le gusta dibujar, Juan Martínez es un afficionado al básquetbol al igual que su primo, por lo que eligió practicar
-            este deporte para poder competir contra él algún día en el futuro.
+            Marcus tiende a pintar sus sueños. A veces son extraños e incoherentes, pero otras veces
+            son hermosos y destellantes
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/JuanMartinez.png" alt="Juan">
-        <h3>[Juan Martínez]</h3>
+        <img src="{% static '../img/MarcusAnton.png' %}" alt="Anton">
+        <h3>[Marcus Anton]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="basquetbol.html">← Volver a lista de fichas</a>
+        <a href="pintura.html">← Volver a lista de fichas</a>
     </nav>
 
     <footer class="footer">

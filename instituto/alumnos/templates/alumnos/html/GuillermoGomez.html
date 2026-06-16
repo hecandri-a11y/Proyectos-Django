@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,33 +20,33 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Marcus Anton</h1>
+        <h1>Guillermo Gómez</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 22 años</p>
-        <p><strong>Talento:</strong> Pintura</p>
+        <p><strong>Edad:</strong> 40 años</p>
+        <p><strong>Talento:</strong> Escultura</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            Marcus tiende a pintar sus sueños. A veces son extraños e incoherentes, pero otras veces
-            son hermosos y destellantes
+            Guillermo tiene una impresora 3D con la que usa para hacer figuritas de acción, además de 
+            maquetas de estructuras.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/MarcusAnton.png" alt="Anton">
-        <h3>[Marcus Anton]</h3>
+        <img src="{% static '../img/GuillermoGomez.png' %}" alt="Guillermo">
+        <h3>[Guillermo Gómez]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="pintura.html">← Volver a lista de fichas</a>
+        <a href="escultura.html">← Volver a lista de fichas</a>
     </nav>
 
     <footer class="footer">

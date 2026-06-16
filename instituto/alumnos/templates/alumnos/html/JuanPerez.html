@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,35 +20,34 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Antonio Virgolini</h1>
+        <h1>Juan Pérez</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 14 años</p>
-        <p><strong>Talento:</strong> Básquetbol</p>
+        <p><strong>Edad:</strong> 17 años</p>
+        <p><strong>Talento:</strong> Dibujo</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            A Antonio siempre le interesó el básquetbol desde que era más chico, por lo que se unío a un
-            club de ese deporte para practicarlo.
+            Juan Pérez tiene habilidades destacadas en el dibujo artístico. Le gusta crear
+            ilustraciones realistas y personajes originales utilizando lápiz y tinta.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/AntonioVirgolini.png" alt="Antonio">
-        <h3>[Antonio Virgolini]</h3>
+        <img src="{% static '../img/JuanPerez.png' %}" alt="Juan Perez">
+        <h3>[Juan Pérez]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="basquetbol.html">← Volver a lista de fichas</a>
+        <a href="dibujo.html">← Volver a lista de fichas</a>
     </nav>
-
 
     <footer class="footer">
     <p>¿Tienes alguna pregunta o sugerencia?</p>

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,33 +20,32 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Enzo Sanchez</h1>
+        <h1>Ana Torres</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 21 años</p>
-        <p><strong>Talento:</strong> Fútbol</p>
+        <p><strong>Edad:</strong> 30 años</p>
+        <p><strong>Talento:</strong> Dibujo</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            Enzo simepre fué fan del Colo-Colo, y por eso decidió practicar fútbol para ser igual de
-            abilidoso que sus jugadores facoritos.
+            Ana tiende a dibujar como hobby. No tiene preferencia específica, solo le gusta dibujar
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/EnzoSanchez.png" alt="Enzo">
-        <h3>[Enzo Sanchez]</h3>
+        <img src="{% static '../img/AnaTorres.png' %}" alt="Ana">
+        <h3>[Ana Torres]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="futbol.html">← Volver a lista de fichas</a>
+        <a href="dibujo.html">← Volver a lista de fichas</a>
     </nav>
 
     <footer class="footer">

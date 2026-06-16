@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Categoría Deporte</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <title>Categoría Arte</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
 
-    <nav class="menu">
+<nav class="menu">
     <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="arte.html">Arte</a></li>
@@ -17,26 +18,29 @@
     </ul>
 </nav>
 
+
+    <!-- Título -->
     <header>
-        <h1>Categoría: Deporte</h1>
+        <h1>Categoría: Arte</h1>
     </header>
 
-<section>
+    <section>
 
-<img src="../img/deporte.png" alt="talentos escolares">
+<img src="{% static '../img/arte.png' %}" alt="arte">
 
 </section>
 
-
+    <!-- Lista de talentos -->
     <section>
         <h2>Talentos disponibles</h2>
         <ul>
-            <li><a href="futbol.html">Fútbol</a></li>
-            <li><a href="basquetbol.html">Básquetbol</a></li>
-            <li><a href="natacion.html">Natación</a></li>
+            <li><a href="dibujo.html">Dibujo</a></li>
+            <li><a href="pintura.html">Pintura</a></li>
+            <li><a href="escultura.html">Escultura</a></li>
         </ul>
     </section>
 
+    <!-- Volver al inicio -->
     <nav>
         <a href="../index.html">← Volver al inicio</a>
     </nav>

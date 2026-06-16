@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,33 +20,33 @@
 
     <!-- Nombre -->
     <header>
-        <h1>María López</h1>
+        <h1>Juan Martínez</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 20 años</p>
-        <p><strong>Talento:</strong> Dibujo</p>
+        <p><strong>Edad:</strong> 17 años</p>
+        <p><strong>Talento:</strong> Básquetbol</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            A María le encanta dibujar animales. Tiene una grán abilidad de dibujarlos de memoria, y
-            además, tiende a hacer pequeñas comisiones a gente para dibujar a sus mascotas.
+            Mientras que a su mellizo Juan Pérez le gusta dibujar, Juan Martínez es un afficionado al básquetbol al igual que su primo, por lo que eligió practicar
+            este deporte para poder competir contra él algún día en el futuro.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/MariaLopez.png" alt="Maria">
-        <h3>[María]</h3>
+        <img src="{% static '../img/JuanMartinez.png' %}" alt="Juan">
+        <h3>[Juan Martínez]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="dibujo.html">← Volver a lista de fichas</a>
+        <a href="basquetbol.html">← Volver a lista de fichas</a>
     </nav>
 
     <footer class="footer">

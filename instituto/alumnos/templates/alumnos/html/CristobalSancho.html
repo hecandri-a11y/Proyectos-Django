@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,33 +20,33 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Selena Michell</h1>
+        <h1>Cristobal Sancho</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 27 años</p>
-        <p><strong>Talento:</strong> Pintura</p>
+        <p><strong>Edad:</strong> 21 años</p>
+        <p><strong>Talento:</strong> Natación</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            A Selena le gusta pintar digitalmente, específicamente hacer fanart de media que le gusta
-            como juegos y películas.
+            Cristobal sueña con ser buzo profecional, por lo que a los 19 áños se inscribió en otro curso
+            de natación para logral aquél sueño.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/SelenaMichell.png" alt="Selena">
-        <h3>[Selena Michell]</h3>
+        <img src="{% static '../img/CristobalSancho.png' %}" alt="Cristobal">
+        <h3>[Cristobal Sancho]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="pintura.html">← Volver a lista de fichas</a>
+        <a href="natacion.html">← Volver a lista de fichas</a>
     </nav>
 
     <footer class="footer">

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,36 +20,36 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Carlos Soto</h1>
+        <h1>Victoria Perez</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 18 años</p>
-        <p><strong>Talento:</strong> Dibujo</p>
+        <p><strong>Edad:</strong> 19 años</p>
+        <p><strong>Talento:</strong> Natación</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            Un talentoso dibujante de cómics. Tiende a hacer de todos los tipos de géneros; como 
-            drama, acción, terror, etcétera. Aunque también no se molesta en dibujar otros temas mixtos como retratos.
+            Cuando era chica, Victoria le tenía miedo al agua. Sin embargo empezó perderle miedo mientras 
+            crecía, y ahora se inscribió a un curso de natación para eliminar su miedo por completo.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/CarlosSoto.png" alt="Carlos">
-        <h3>[Carlos Soto]</h3>
+        <img src="{% static '../img/VictoriaPerez.png' %}" alt="Victoria">
+        <h3>[Victoria Perez]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="dibujo.html">← Volver a lista de fichas</a>
+        <a href="natacion.html">← Volver a lista de fichas</a>
     </nav>
 
-   <footer class="footer">
+    <footer class="footer">
     <p>¿Tienes alguna pregunta o sugerencia?</p>
     <a href="Contacto.html" class="btn-footer">Contáctanos</a>
 </footer>

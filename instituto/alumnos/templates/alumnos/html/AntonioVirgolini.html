@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,34 +20,35 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Victoria Perez</h1>
+        <h1>Antonio Virgolini</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 19 años</p>
-        <p><strong>Talento:</strong> Natación</p>
+        <p><strong>Edad:</strong> 14 años</p>
+        <p><strong>Talento:</strong> Básquetbol</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            Cuando era chica, Victoria le tenía miedo al agua. Sin embargo empezó perderle miedo mientras 
-            crecía, y ahora se inscribió a un curso de natación para eliminar su miedo por completo.
+            A Antonio siempre le interesó el básquetbol desde que era más chico, por lo que se unío a un
+            club de ese deporte para practicarlo.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/VictoriaPerez.png" alt="Victoria">
-        <h3>[Victoria Perez]</h3>
+        <img src="{% static '../img/AntonioVirgolini' %}" alt="Antonio">
+        <h3>[Antonio Virgolini]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="natacion.html">← Volver a lista de fichas</a>
+        <a href="basquetbol.html">← Volver a lista de fichas</a>
     </nav>
+
 
     <footer class="footer">
     <p>¿Tienes alguna pregunta o sugerencia?</p>

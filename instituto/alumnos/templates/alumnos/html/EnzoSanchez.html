@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Talento</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,33 +20,33 @@
 
     <!-- Nombre -->
     <header>
-        <h1>Guillermo Gómez</h1>
+        <h1>Enzo Sanchez</h1>
     </header>
 
     <!-- Información -->
     <section>
-        <p><strong>Edad:</strong> 40 años</p>
-        <p><strong>Talento:</strong> Escultura</p>
+        <p><strong>Edad:</strong> 21 años</p>
+        <p><strong>Talento:</strong> Fútbol</p>
     </section>
 
     <!-- Descripción -->
     <section>
         <h2>Descripción</h2>
         <p>
-            Guillermo tiene una impresora 3D con la que usa para hacer figuritas de acción, además de 
-            maquetas de estructuras.
+            Enzo simepre fué fan del Colo-Colo, y por eso decidió practicar fútbol para ser igual de
+            abilidoso que sus jugadores facoritos.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="../img/GuillermoGomez.png" alt="Guillermo">
-        <h3>[Guillermo Gómez]</h3>
+        <img src="{% static '../img/EnzoSanchez.png' %}" alt="Enzo">
+        <h3>[Enzo Sanchez]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="escultura.html">← Volver a lista de fichas</a>
+        <a href="futbol.html">← Volver a lista de fichas</a>
     </nav>
 
     <footer class="footer">

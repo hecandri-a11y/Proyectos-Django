@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>lista de fichas de pintura</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <title>lista de fichas de natación</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
     <!-- Título -->
     <header>
-        <h1>Lista de Fichas de "Pintura"</h1>
+        <h1>Lista de Fichas de "Natación"</h1>
     </header>
 
     <!-- Lista de fichas -->
@@ -27,14 +28,14 @@
         <h2>Infórmate de los participantes</h2>
 
         <ul>
-            <li><a href="MarcusAnton.html">Marcus Antón</a></li>
-            <li><a href="SelenaMichell.html">Selena Michell</a></li>
+            <li><a href="VictoriaPerez.html">Victoria Perez</a></li>
+            <li><a href="CristobalSancho.html">Cristobal Sancho</a></li>
         </ul>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="arte.html">← Volver a arte</a>
+        <a href="deporte.html">← Volver a deporte</a>
     </nav>
 
     <footer class="footer">
