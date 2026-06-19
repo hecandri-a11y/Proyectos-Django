@@ -12,9 +12,9 @@
 
     <nav class="menu">
     <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="arte.html">Arte</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'arte' %}">Arte</a></li>
+            <li><a href="{% url 'deporte' %}">Deporte</a></li>
     </ul>
 </nav>
 
@@ -28,19 +28,19 @@
         <h2>Infórmate de los participantes</h2>
 
         <ul>
-            <li><a href="VictoriaPerez.html">Victoria Perez</a></li>
-            <li><a href="CristobalSancho.html">Cristobal Sancho</a></li>
+            <li><a href="{% url 'VictoriaPerez' %}">Victoria Perez</a></li>
+            <li><a href="{% url 'CristobalSancho' %}">Cristobal Sancho</a></li>
         </ul>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="deporte.html">← Volver a deporte</a>
+        <a href="{% url 'deporte' %}">← Volver a deporte</a>
     </nav>
 
     <footer class="footer">
     <p>¿Tienes alguna pregunta o sugerencia?</p>
-    <a href="Contacto.html" class="btn-footer">Contáctanos</a>
+    <a href="{% url 'Contacto' %}" class="btn-footer">Contáctanos</a>
 </footer>
 
 </body>

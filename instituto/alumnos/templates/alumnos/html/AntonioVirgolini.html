@@ -10,13 +10,14 @@
 
 <body>
 
+    <!-- Menú -->
     <nav class="menu">
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="arte.html">Arte</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'arte' %}">Arte</a></li>
+            <li><a href="{% url 'deporte' %}">Deporte</a></li>
+        </ul>
+    </nav>
 
     <!-- Nombre -->
     <header>
@@ -33,27 +34,27 @@
     <section>
         <h2>Descripción</h2>
         <p>
-            A Antonio siempre le interesó el básquetbol desde que era más chico, por lo que se unío a un
+            A Antonio siempre le interesó el básquetbol desde que era más chico, por lo que se unió a un
             club de ese deporte para practicarlo.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="{% static 'img/AntonioVirgolini' %}" alt="Antonio">
+        <img src="{% static 'img/AntonioVirgolini.png' %}" alt="Antonio Virgolini">
         <h3>[Antonio Virgolini]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="basquetbol.html">← Volver a lista de fichas</a>
+        <a href="{% url 'basquetbol' %}">Volver a basquetbol</a>
     </nav>
 
-
+    <!-- Footer -->
     <footer class="footer">
-    <p>¿Tienes alguna pregunta o sugerencia?</p>
-    <a href="Contacto.html" class="btn-footer">Contáctanos</a>
-</footer>
+        <p>¿Tienes alguna pregunta o sugerencia?</p>
+        <a href="{% url 'Contacto' %}" class="btn-footer">Contáctanos</a>
+    </footer>
 
 </body>
 </html>

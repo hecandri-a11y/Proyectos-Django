@@ -27,9 +27,9 @@ $("#titulo").text("Texto cambiado");
 
 <nav class="menu">
     <ul>
-        <li><a href="index">Inicio</a></li>
-        <li><a href="arte">Arte</a></li>
-        <li><a href="deporte">Deporte</a></li>
+        <a href="{% url 'index' %}">Inicio</a>
+<a href="{% url 'arte' %}">Arte</a>
+<a href="{% url 'deporte' %}">Deporte</a>
     </ul>
 </nav>
 
@@ -62,7 +62,7 @@ $("#titulo").text("Texto cambiado");
 <!-- FOOTER -->
 <footer class="footer">
     <p>¿Tienes alguna pregunta o sugerencia?</p>
-    <a href="html/Contacto.html" class="btn-footer">Contáctanos</a>
+    <a href="{% url 'Contacto' %}" class="btn-footer">Contáctanos</a>
 </footer>
 
 

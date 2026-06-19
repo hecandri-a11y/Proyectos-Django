@@ -11,12 +11,12 @@
 <body>
 
     <nav class="menu">
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="arte.html">Arte</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'arte' %}">Arte</a></li>
+            <li><a href="{% url 'deporte' %}">Deporte</a></li>
+        </ul>
+    </nav>
 
     <!-- Nombre -->
     <header>
@@ -33,26 +33,26 @@
     <section>
         <h2>Descripción</h2>
         <p>
-            Cristobal sueña con ser buzo profecional, por lo que a los 19 áños se inscribió en otro curso
-            de natación para logral aquél sueño.
+            Cristobal sueña con ser buzo profesional, por lo que a los 19 años se inscribió en otro curso
+            de natación para lograr aquel sueño.
         </p>
     </section>
 
     <!-- Imagen -->
     <section>
-        <img src="{% static 'img/CristobalSancho.png' %}" alt="Cristobal">
+        <img src="{% static 'img/CristobalSancho.png' %}" alt="Cristobal Sancho">
         <h3>[Cristobal Sancho]</h3>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="natacion.html">← Volver a lista de fichas</a>
+        <a href="{% url 'natacion' %}">Volver a natacion</a>
     </nav>
 
     <footer class="footer">
-    <p>¿Tienes alguna pregunta o sugerencia?</p>
-    <a href="Contacto.html" class="btn-footer">Contáctanos</a>
-</footer>
+        <p>¿Tienes alguna pregunta o sugerencia?</p>
+        <a href="{% url 'Contacto' %}" class="btn-footer">Contáctanos</a>
+    </footer>
 
 </body>
 </html>

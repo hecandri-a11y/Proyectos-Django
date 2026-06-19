@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>lista de fichas de dibujo</title>
+    <title>Lista de fichas de dibujo</title>
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 </head>
@@ -11,12 +11,12 @@
 <body>
 
     <nav class="menu">
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="arte.html">Arte</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'arte' %}">Arte</a></li>
+            <li><a href="{% url 'deporte' %}">Deporte</a></li>
+        </ul>
+    </nav>
 
     <!-- Título -->
     <header>
@@ -28,22 +28,22 @@
         <h2>Infórmate de los participantes</h2>
 
         <ul>
-            <li><a href="JuanPerez.html">Juan Pérez</a></li>
-            <li><a href="MariaLopez.html">María López</a></li>
-            <li><a href="CarlosSoto.html">Carlos Soto</a></li>
-            <li><a href="AnaTorres.html">Ana Torres</a></li>
+            <li><a href="{% url 'JuanPerez' %}">Juan Pérez</a></li>
+            <li><a href="{% url 'MariaLopez' %}">María López</a></li>
+            <li><a href="{% url 'CarlosSoto' %}">Carlos Soto</a></li>
+            <li><a href="{% url 'AnaTorres' %}">Ana Torres</a></li>
         </ul>
     </section>
 
     <!-- Volver -->
     <nav>
-        <a href="arte.html">← Volver a arte</a>
+        <a href="{% url 'arte' %}">← Volver a arte</a>
     </nav>
 
     <footer class="footer">
-    <p>¿Tienes alguna pregunta o sugerencia?</p>
-    <a href="Contacto.html" class="btn-footer">Contáctanos</a>
-</footer>
+        <p>¿Tienes alguna pregunta o sugerencia?</p>
+        <a href="{% url 'Contacto' %}" class="btn-footer">Contáctanos</a>
+    </footer>
 
 </body>
 </html>

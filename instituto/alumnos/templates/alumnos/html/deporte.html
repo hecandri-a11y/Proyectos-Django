@@ -11,41 +11,38 @@
 <body>
 
     <nav class="menu">
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="arte.html">Arte</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'arte' %}">Arte</a></li>
+            <li><a href="{% url 'deporte' %}">Deporte</a></li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Categoría: Deporte</h1>
     </header>
 
-<section>
-
-<img src="{% static 'img/deporte.png' %}" alt="deporte">
-
-</section>
-
+    <section>
+        <img src="{% static 'img/deporte.png' %}" alt="deporte">
+    </section>
 
     <section>
         <h2>Talentos disponibles</h2>
         <ul>
-            <li><a href="futbol.html">Fútbol</a></li>
-            <li><a href="basquetbol.html">Básquetbol</a></li>
-            <li><a href="natacion.html">Natación</a></li>
+            <li><a href="{% url 'futbol' %}">Fútbol</a></li>
+            <li><a href="{% url 'basquetbol' %}">Básquetbol</a></li>
+            <li><a href="{% url 'natacion' %}">Natación</a></li>
         </ul>
     </section>
 
     <nav>
-        <a href="../index.html">← Volver al inicio</a>
+        <a href="{% url 'index' %}">← Volver al inicio</a>
     </nav>
 
     <footer class="footer">
-    <p>¿Tienes alguna pregunta o sugerencia?</p>
-    <a href="Contacto.html" class="btn-footer">Contáctanos</a>
-</footer>
+        <p>¿Tienes alguna pregunta o sugerencia?</p>
+        <a href="{% url 'Contacto' %}" class="btn-footer">Contáctanos</a>
+    </footer>
 
 </body>
 </html>

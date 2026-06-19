@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="../js/funciones.js"></script>
+<script src="{% static 'js/funciones.js' %}"></script>
     <title>Contacto</title>
 </head>
 <body>
 
 <nav class="menu">
     <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="arte.html">Arte</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
+       <li><a href="{% url 'index' %}">Inicio</a></li>
+<li><a href="{% url 'arte' %}">Arte</a></li>
+<li><a href="{% url 'deporte' %}">Deporte</a></li>
     </ul>
 </nav>
 
@@ -113,7 +113,7 @@
 </section>
 
 <nav>
-    <a href="../index.html">← Volver al inicio</a>
+    <a href="{% url 'index' %}">← Volver al inicio</a>
 </nav>
 
 </body>
